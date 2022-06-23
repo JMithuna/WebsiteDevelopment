@@ -1,0 +1,24 @@
+.sponsor {
+  background-color: $sponsor_background_color;
+  &_overlay {
+    padding: 100px 0px;
+    &_header {
+      h3 {
+        font-family: $font-family-Courgette;
+        color: $third_color;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      h2 {
+        color: $third_color;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .single_sponsor {
+    background-color: transparent;
+  }
+}

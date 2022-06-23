@@ -1,0 +1,140 @@
+.navbar {
+  border-bottom: 1px solid $navbar_border_bottom;
+  padding: 15px 0px;
+  .navbar_toggler_bar {
+    background-color: $primary_color;
+    color: $secondary_color;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  &_nav_search {
+    &_icon {
+      i {
+        cursor: pointer;
+        margin-left: 5px;
+        transition: all 300ms ease;
+        text-align: center;
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+        font-size: 14px;
+        color: $primary_color;
+
+        border-radius: 50%;
+        border: 1px solid $primary_color;
+        &:hover {
+          color: $secondary_color;
+          background-color: $primary_color;
+        }
+      }
+    }
+    .dropdown-menu {
+      padding: 20px;
+      min-width: 30rem;
+
+      .form-control {
+        padding: 1.375rem 0.75rem;
+      }
+    }
+    &_form {
+      .nav_search_input {
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+
+          &::placeholder {
+            color: $primary_color;
+          }
+        }
+      }
+      .btn_nav_search {
+        color: $secondary_color;
+        background-color: $navbarTop_background_color;
+        border-color: $navbarTop_background_color;
+        &:hover {
+          background-color: $primary_color;
+          border-color: $primary_color;
+        }
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+  &_nav {
+    a {
+      font-family: $font-family-Raleway;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: $text_primary_color;
+
+      transition: all linear 0.2s;
+      &:hover {
+        color: $primary_color;
+      }
+    }
+
+    &_item {
+      .navbar_dropdown_menu {
+        border-radius: 0;
+        padding: 0;
+        min-width: 12rem;
+        .dropdown-item {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        .dropdown-divider {
+          margin: 0;
+        }
+        a {
+          &:focus {
+            background-color: $primary_color !important;
+            color: $secondary_color !important;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar_btn_donate {
+    padding: 5px 20px;
+    border-color: $primary_color;
+    background-color: $primary_color;
+    color: $secondary_color;
+
+    &:hover {
+      background-color: $primary_color;
+      border-color: $primary_color;
+      color: $secondary_color;
+    }
+    &:focus {
+      background-color: $primary_color !important;
+      border-color: $primary_color !important;
+      box-shadow: $btn_shadow !important;
+    }
+  }
+}
+
+.fixed-top {
+  width: 100%;
+  position: fixed;
+  background-color: $secondary_color;
+  animation: fixed-top 300ms ease-in-out;
+  box-shadow: $shadow-sm;
+  padding: 0px 0px;
+}
+
+@keyframes fixed-top {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.navbar_top_on_scroll_pb {
+  padding-bottom: 87px;
+}

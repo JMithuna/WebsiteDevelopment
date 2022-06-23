@@ -1,0 +1,52 @@
+.register {
+  padding: 100px 0px;
+  &_card {
+    &_form {
+      label {
+        font-family: $font-family-Raleway;
+        color: $text_primary_color;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      input {
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+        }
+      }
+      button {
+        padding: 5px 25px;
+        border-color: $primary_color;
+        background-color: $primary_color;
+        &:focus {
+          background-color: $primary_color !important;
+          border-color: $primary_color !important;
+          box-shadow: $btn_shadow !important;
+        }
+        &:hover {
+          background-color: $primary_color !important;
+          border-color: $primary_color !important;
+        }
+      }
+
+      &_have_account {
+        font-family: $font-family-Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        color: $text_primary_color;
+        a {
+          font-family: $font-family-Raleway;
+          font-size: 14px;
+          font-weight: 400;
+          color: $text_primary_color;
+          text-decoration: underline;
+
+          transition: transition(300ms, linear);
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+}

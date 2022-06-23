@@ -1,0 +1,68 @@
+.about {
+  padding: 100px 0px;
+  &_detail {
+    h3 {
+      font-family: $font-family-Courgette;
+      color: $text_primary_color;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h2 {
+      color: $text_primary_color;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $text_primary_color;
+      line-height: 20px;
+    }
+    button {
+      padding: 10px 35px;
+      border-color: $primary_color;
+      background-color: $primary_color;
+      &:focus {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+        box-shadow: $btn_shadow !important;
+      }
+      &:hover {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+      }
+    }
+  }
+  &_video {
+    background: url("../images/about/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_overlay {
+      background-color: backgroundOpacityColorPrimary(0.6);
+      padding: 100px 0px;
+      .about_video_icon {
+        a {
+          i {
+            cursor: pointer;
+            transition: all 300ms ease;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 30px;
+            color: $primary_color;
+            background-color: $secondary_color;
+            border-radius: 50%;
+            &:hover {
+              color: $secondary_color !important;
+              background-color: $primary_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

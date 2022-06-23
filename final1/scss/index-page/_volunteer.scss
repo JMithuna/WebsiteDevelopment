@@ -1,0 +1,40 @@
+.volunteer {
+  background: url("../images/volunteer/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  &_overlay {
+    background-color: backgroundOpacityColorPrimary(0.6);
+    padding: 100px 0px;
+    &_header {
+      h3 {
+        font-family: $font-family-Courgette;
+        color: $secondary_color;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      h2 {
+        color: $secondary_color;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      a {
+        padding: 10px 25px;
+        border-color: $primary_color;
+        background-color: $primary_color;
+        &:focus {
+          background-color: $primary_color !important;
+          border-color: $primary_color !important;
+          box-shadow: $btn_shadow !important;
+        }
+        &:hover {
+          background-color: $primary_color !important;
+          border-color: $primary_color !important;
+        }
+      }
+    }
+  }
+}

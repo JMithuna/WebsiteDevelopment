@@ -1,0 +1,4 @@
+// $motion=linear
+@function transition($time, $motion) {
+  @return all $time $motion;
+}

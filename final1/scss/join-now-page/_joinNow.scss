@@ -1,0 +1,46 @@
+.join_now_page {
+  padding: 100px 0px;
+  .join_now_form {
+    &_header {
+      font-family: $font-family-Raleway;
+      color: $text_primary_color;
+      font-size: 20px;
+      font-weight: 400;
+      background-color: transparent;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    &_body {
+      label {
+        font-family: $font_family_Open_Sans;
+        color: $text_primary_color;
+        font-size: 16px;
+        font-weight: 400;
+        span {
+          font-size: 5px;
+          color: $primary_color;
+        }
+      }
+
+      input {
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+        }
+      }
+      select {
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+        }
+      }
+      textarea {
+        resize: none;
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+        }
+      }
+    }
+  }
+}

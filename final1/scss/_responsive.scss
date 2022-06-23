@@ -1,0 +1,319 @@
+// Large devices (desktops, less than 1200px)lg
+@media (max-width: 1199.98px) {
+  // banner slider
+  .bannerSlider {
+    .carousel-img {
+      height: 500px;
+    }
+    .bannerSlider_overlay {
+      h2 {
+        font-size: 35px;
+      }
+      .btn_join {
+        padding: 5px 20px;
+      }
+      .btn_donate {
+        padding: 5px 20px;
+      }
+    }
+  }
+  // start index page
+  .footer {
+    &_logo {
+      &_icon {
+        a {
+          i {
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  // end index page
+}
+// Medium devices (tablets, less than 992px)md
+@media (max-width: 991.98px) {
+  // banner slider
+  .bannerSlider {
+    .carousel-img {
+      height: 500px;
+    }
+    .bannerSlider_overlay {
+      h2 {
+        font-size: 35px;
+      }
+      .btn_join {
+        padding: 5px 20px;
+      }
+      .btn_donate {
+        padding: 5px 20px;
+      }
+    }
+  }
+}
+// Small devices (landscape phones, less than 768px)sm
+@media (max-width: 767.98px) {
+  // index page
+  .project_activity {
+    padding: 50px 0px;
+  }
+
+  .our_service_overlay {
+    padding: 50px 0px;
+  }
+
+  .our_projects {
+    padding: 50px 0px;
+  }
+
+  .testimonial_overlay {
+    padding: 50px 0px;
+  }
+
+  .blog {
+    padding: 50px 0px;
+  }
+
+  .raise_fund_overlay {
+    padding: 50px 0px;
+  }
+
+  .sponsor_overlay {
+    padding: 50px 0px;
+  }
+
+  .volunteer_overlay {
+    padding: 50px 0px;
+  }
+
+  .footer_padding {
+    padding: 50px 0px;
+  }
+
+  // about page
+
+  .page_title_overlay {
+    padding: 50px 0px;
+  }
+
+  .about {
+    padding: 50px 0px;
+  }
+
+  .team {
+    padding: 50px 0px;
+  }
+
+  .ceo {
+    padding: 50px 0px;
+  }
+
+  // service page
+  .service_page {
+    padding: 50px 0px;
+  }
+
+  // service details page
+  .service_details {
+    padding: 50px 0px;
+  }
+
+  // project details page
+  .project_details {
+    padding: 50px 0px;
+  }
+
+  // gallery page
+  .gallery_page {
+    padding: 50px 0px;
+  }
+
+  // gallery details page
+  .gallery_details {
+    padding: 50px 0px;
+  }
+
+  // blog page
+  .blog_main {
+    padding: 50px 0px;
+  }
+
+  // contact page
+  .contact_details {
+    padding: 50px 0px;
+  }
+
+  // donate page
+  .donate {
+    padding: 50px 0px;
+  }
+
+  // register page
+  .register {
+    padding: 50px 0px;
+  }
+
+  // login page
+  .login {
+    padding: 50px 0px;
+  }
+
+  // error page
+  .error_404 {
+    padding: 50px 0px;
+  }
+
+  // reset email page
+  .reset {
+    padding: 50px 0px;
+  }
+
+  // reset_password page
+  .reset_password {
+    padding: 50px 0px;
+  }
+
+  // join now page
+  .join_now_page {
+    padding: 50px 0px;
+  }
+
+  // global
+  .navbar_top_on_scroll_pb {
+    padding-bottom: 60px;
+  }
+  // banner slider
+  .bannerSlider {
+    .carousel-img {
+      height: 350px;
+    }
+    .bannerSlider_overlay {
+      background: backgroundOpacityColorPrimary(0.1);
+    }
+  }
+}
+
+// for only banner caroser smalle image
+@media (min-width: 767.98px) {
+  .bannerSlider {
+    .carousel {
+      .carousel_indicators {
+        flex-direction: column;
+        top: 50%;
+        bottom: unset;
+        right: 0;
+        left: unset;
+        margin-right: unset;
+        margin-left: unset;
+        transform: translateY(-50%);
+        .carousel_indicators_list {
+          box-sizing: unset;
+          flex: unset;
+          width: unset;
+          height: unset;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          text-indent: unset;
+          cursor: pointer;
+          background-color: unset;
+          background-clip: unset;
+          // border-top: unset;
+          // border-bottom: unset;
+          opacity: 0.5;
+          transition: opacity 300ms ease;
+          border: 3px solid rgba($secondary_color, 0.75);
+          .img {
+            width: 60px;
+            height: 35px;
+          }
+          &.active {
+            border: 3px solid rgba($secondary_color, 0.95);
+          }
+        }
+      }
+    }
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  // start index page
+
+  // heading font size change
+  .project_activity .icon_box h2,
+  .our_service_header h2,
+  .our_projects_header h2,
+  .testimonial_overlay_header h2,
+  .blog_header h2,
+  .raise_fund_overlay_detail_header h2,
+  .sponsor_overlay_header h2,
+  .volunteer_overlay_header h2,
+  .newsletter_overlay_text h4,
+  .page_title_overlay_content h2,
+  .about_detail h2,
+  .team_header h2,
+  .ceo_header h2,
+  .service_page_header h2,
+  .contact_details_content h2,
+  .contact_details_address h2,
+  .donate .donor_details h2,
+  .donate .donation_details h2 {
+    font-size: 24px;
+  }
+
+  // navbar main
+  .navbar {
+    &_nav {
+      li {
+        margin: 5px 0px;
+      }
+    }
+  }
+  // banner slider
+  .bannerSlider {
+    .carousel-img {
+      height: 250px;
+    }
+    .bannerSlider_overlay {
+      background: backgroundOpacityColorPrimary(0.1);
+    }
+  }
+  // activity
+  .project_activity {
+    .icon_box {
+      span {
+        img {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+  // end index page
+  // blog details page
+  // blog detail
+  .blog_main {
+    &_sidebar_details {
+      .blog_detail {
+        &_card {
+          &_footer {
+            .share_icons {
+              h5 {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // gallery page
+  .gallery_details {
+    .gallery_images {
+      .img {
+        height: 220px;
+      }
+    }
+  }
+
+  // end
+}

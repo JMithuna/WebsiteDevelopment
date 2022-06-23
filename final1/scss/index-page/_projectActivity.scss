@@ -1,0 +1,38 @@
+.project_activity {
+  padding: 100px 0px;
+
+  .icon_box {
+    span {
+      img {
+        margin: 0px 20px;
+      }
+    }
+
+    h2 {
+      font-family: $font-family-Courgette;
+      font-size: 40px;
+      color: $text_primary_color;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+  &_counter {
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px 10px;
+    span {
+      font-family: $font-family-Raleway;
+      font-size: 60px;
+      color: $primary_color;
+      font-weight: 700;
+    }
+    h3 {
+      font-family: $font-family-Open-Sans;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $text_primary_color;
+      font-weight: 700;
+    }
+  }
+}

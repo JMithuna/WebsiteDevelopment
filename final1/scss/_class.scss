@@ -1,0 +1,45 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.text_primary_color {
+  color: $primary_color;
+}
+.hover_text_primary_color {
+  &:hover {
+    color: $primary_color;
+  }
+}
+
+.text_subtitle {
+  font-size: $font_family_Open_Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $text_primary_color;
+}
+
+.btn_primary {
+  color: $secondary_color;
+  border-color: $primary_color;
+  background-color: $primary_color;
+  &:hover {
+    color: $secondary_color;
+    border-color: $primary_color;
+    background-color: $primary_color;
+  }
+  &:focus {
+    color: $secondary_color !important;
+    box-shadow: $btn_shadow !important;
+    background-color: $primary_color !important;
+    border-color: $primary_color !important;
+  }
+}

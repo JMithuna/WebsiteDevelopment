@@ -1,0 +1,43 @@
+.page_title {
+  background: url("../images/page-title/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  &_overlay {
+    background-color: backgroundOpacityColorPrimary(0.6);
+    padding: 100px 0px;
+    &_content {
+      h2 {
+        color: $secondary_color;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      ul {
+        margin-bottom: 0;
+        li {
+          display: inline-block;
+          margin: 0px 10px;
+          a {
+            font-family: $font-family-Courgette;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            color: $secondary_color;
+          }
+          .active {
+            font-family: $font-family-Courgette;
+            font-size: 14px;
+            font-weight: 400;
+            color: $primary_color;
+          }
+          span {
+            font-size: 14px;
+            color: $secondary_color;
+          }
+        }
+      }
+    }
+  }
+}

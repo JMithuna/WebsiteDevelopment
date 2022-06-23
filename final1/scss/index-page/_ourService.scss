@@ -1,0 +1,60 @@
+.our_service {
+  background: url("../images/service/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &_overlay {
+    background-color: backgroundOpacityColorPrimary(0.8);
+    padding: 100px 0px;
+  }
+
+  &_header {
+    h3 {
+      font-family: $font-family-Courgette;
+      color: $secondary_color;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h2 {
+      color: $secondary_color;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+  }
+  &_product {
+    background-color: backgroundOpacityColorSecondary(0.05);
+    padding: 80px 15px 70px;
+    text-align: center;
+    border: 1px solid backgroundOpacityColorSecondary(0.05);
+    margin-bottom: 30px;
+    transition: transition(0.2s, linear);
+    &:hover {
+      background-color: rgba($primary_color, 0.1);
+      h2 {
+        color: $primary_color;
+      }
+    }
+    h2 {
+      color: $secondary_color;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 10px;
+      transition: transition(0.2s, linear);
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: whiteTextOpacity(0.5);
+      line-height: 20px;
+      margin-top: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

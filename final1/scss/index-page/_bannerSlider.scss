@@ -1,0 +1,61 @@
+.bannerSlider {
+  .bannerSlider_overlay {
+    background: backgroundOpacityColorPrimary(0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    // padding-top: 116px;
+    // padding-bottom: 116px;
+    h2 {
+      font-family: $font-family-Raleway;
+      font-size: 72px;
+      font-weight: 600;
+      color: $secondary_color;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $font-family-Open-Sans;
+      font-size: 16px;
+      font-weight: 400;
+      color: whiteTextOpacity(0.8);
+    }
+    .btn_join {
+      padding: 9px 39px;
+      text-transform: capitalize;
+      border-color: $primary_color;
+      background-color: $primary_color;
+      transition: all linear 0.2s ease-in-out;
+      &:focus {
+        color: $secondary_color;
+        background-color: $primary_color;
+        border-color: $primary_color;
+        box-shadow: $btn_shadow !important;
+      }
+      &:hover {
+        background-color: transparent !important;
+        color: $primary_color;
+      }
+    }
+
+    .btn_donate {
+      padding: 9px 39px;
+      text-transform: capitalize;
+      color: $primary_color;
+      border-color: $primary_color;
+      background-color: transparent;
+      transition: transition(0.2s, linear);
+      &:focus {
+        color: $primary_color;
+        background-color: $primary_color;
+        border-color: $primary_color;
+        box-shadow: $btn_shadow !important;
+      }
+      &:hover {
+        background-color: $primary_color;
+        color: $secondary_color;
+      }
+    }
+  }
+}

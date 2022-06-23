@@ -1,0 +1,82 @@
+.raise_fund {
+  background: url("../images/raise-fund/3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  //   background-color: $primary_color;
+  &_overlay {
+    background-color: backgroundOpacityColorPrimary(0.8);
+    padding: 100px 0px;
+    &_detail {
+      &_header {
+        h2 {
+          color: $secondary_color;
+          font-size: 32px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: $secondary_color;
+          line-height: 20px;
+        }
+      }
+      .btn_donate {
+        padding: 10px 25px;
+        border-color: $primary_color;
+        background-color: $primary_color;
+        &:focus {
+          background-color: $primary_color !important;
+          border-color: $primary_color !important;
+          box-shadow: $btn_shadow !important;
+        }
+        &:hover {
+          background-color: $primary_color !important;
+          border-color: $primary_color !important;
+        }
+      }
+      .raise_fund_progressbar {
+        margin-top: 50px;
+
+        .percentCount {
+          color: $secondary_color;
+        }
+      }
+      .fund_collection {
+        ul {
+          li {
+            display: inline;
+            font-family: $font-family-Raleway;
+            color: $secondary_color;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-right: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+            .goal {
+              font-family: $font-family-Raleway;
+              font-size: 20px;
+              color: whiteTextOpacity(0.9);
+              background-color: #fe5f2a;
+              border: 1px solid transparent;
+              border-radius: 15px;
+              padding: 0px 3px;
+            }
+            .raised {
+              font-family: $font-family-Raleway;
+              font-size: 20px;
+              color: whiteTextOpacity(0.9);
+              background-color: #009fff;
+              border: 1px solid transparent;
+              border-radius: 15px;
+              padding: 0px 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.our_projects {
+  padding: 100px 0px;
+  &_header {
+    h3 {
+      font-family: $font-family-Courgette;
+      color: $text_primary_color;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h2 {
+      color: $text_primary_color;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+  }
+  &_menu {
+    margin-bottom: 50px;
+    ul {
+      li {
+        font-family: $font-family-Raleway;
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+        cursor: pointer;
+        padding: 0px 5px;
+        text-transform: uppercase;
+      }
+      li.active {
+        color: $primary_color;
+      }
+    }
+  }
+
+  &_grid {
+    .single_project {
+      margin: 15px;
+      &:hover .single_project_image_container img {
+        transform: scale(1.15);
+      }
+      &:hover .single_project_image_container_overlay {
+        top: 0%;
+        height: 100%;
+        // transform: scale(1);
+        .content {
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          width: 100%;
+          padding: 20px 10px 25px 10px;
+          transform: translateY(-50%);
+          a {
+            display: block;
+            font-family: $font-family-Raleway;
+            font-size: 14px;
+            font-weight: 400;
+            color: $secondary_color;
+            text-decoration: none;
+            text-transform: capitalize;
+
+            transition: transition(0.2s, linear);
+            line-height: 20px;
+            // &:hover {
+            //   color: $primary_color;
+            // }
+          }
+        }
+      }
+      &_image_container {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transform: scale(1);
+
+          transition: transition(0.4s, ease);
+        }
+        &_overlay {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 0%;
+
+          transition: transition(0.3s, ease);
+          background: backgroundOpacityColorPrimary(0.8);
+          .content {
+            a {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .project_page_pagination {
+    ul {
+      li {
+        a {
+          &:focus {
+            border-color: $primary_color;
+            box-shadow: $btn_shadow;
+          }
+          color: $text_primary_color;
+          &.active {
+            color: $secondary_color;
+            background-color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+}

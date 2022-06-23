@@ -1,0 +1,105 @@
+.contact_details {
+  padding: 100px 0px;
+  &_content {
+    h3 {
+      font-family: $font-family-Courgette;
+      color: $text_primary_color;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h2 {
+      color: $text_primary_color;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    &_form {
+      label {
+        font-family: $font-family-Raleway;
+        color: $text_primary_color;
+        font-size: 16px;
+        font-weight: 400;
+        span {
+          color: $primary_color;
+        }
+      }
+
+      input {
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+        }
+      }
+      textarea {
+        resize: none;
+        &:focus {
+          border-color: $primary_color;
+          box-shadow: $btn_shadow;
+        }
+      }
+    }
+    button {
+      padding: 15px 25px;
+      border-color: $primary_color;
+      background-color: $primary_color;
+      &:focus {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+        box-shadow: $btn_shadow !important;
+      }
+      &:hover {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+      }
+    }
+  }
+  &_address {
+    h2 {
+      color: $text_primary_color;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $text_primary_color;
+      line-height: 20px;
+    }
+    &_box {
+      &_content {
+        h3 {
+          color: $text_primary_color;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: $text_primary_color;
+          line-height: 20px;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: $text_primary_color;
+        }
+      }
+      &_icon {
+        padding: 30px;
+        background-color: $primary_color;
+        &.map {
+          i {
+            font-size: 25px;
+          }
+        }
+        i {
+          color: $secondary_color;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

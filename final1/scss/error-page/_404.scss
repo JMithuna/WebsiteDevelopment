@@ -1,0 +1,44 @@
+.error_404 {
+  padding: 100px 0px;
+  &_content {
+    h2 {
+      font-family: $font-family-Courgette;
+      color: $text_primary_color;
+      font-size: 120px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-family: $font-family-Courgette;
+      color: $text_primary_color;
+      font-size: 50px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $text_primary_color;
+      line-height: 20px;
+    }
+    a {
+      i {
+        margin-right: 5px;
+      }
+      color: $secondary_color;
+      padding: 10px 35px;
+      border-color: $primary_color;
+      background-color: $primary_color;
+      margin-top: 28px;
+      &:focus {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+        box-shadow: $btn_shadow !important;
+      }
+      &:hover {
+        background-color: $primary_color !important;
+        border-color: $primary_color !important;
+        color: $secondary_color;
+      }
+    }
+  }
+}
